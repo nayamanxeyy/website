@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI SALE CENTER - Quality Clothes at Affordable Prices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="https://postimg.cc/CzdhF0Hh/2bab8ad1" alt="ALI SALE CENTER Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#" id="women-link"><i class="fas fa-female"></i> Women</a></li>
+                <li><a href="#" id="men-link"><i class="fas fa-male"></i> Men</a></li>
+                <li><a href="#" id="kids-link"><i class="fas fa-child"></i> Kids</a></li>
+                <li><a href="#sale"><i class="fas fa-tags"></i> Sale</a></li>
+                <li><a href="#about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for items...">
+            <button onclick="searchItems()">Search</button>
+        </div>
+    </header>
+
+    <!-- Current Sales Section -->
+    <section id="sale">
+        <h2>Current Sales</h2>
+        <div class="slider" id="sale-slider">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2023/09/104201_Tshirt_-DSC08722.jpg" alt="Sale Item 1">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2023/06/0001_P36_102654_DSC00632.jpg" alt="Sale Item 2">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2023/08/103599_ms_color-edited.jpg" alt="Sale Item 3">
+        </div>
+    </section>
+
+    <!-- Women New Arrivals Section -->
+    <section id="women-new-arrivals">
+        <h2>Women's New Arrivals</h2>
+        <div class="slider" id="women-slider">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/07/107687_0000_107687_b.jpg" alt="Women Item 1">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/05/107434_2294_2.jpg" alt="Women Item 2">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/06/6_0001_107737-2.jpg" alt="Women Item 3">
+        </div>
+    </section>
+
+    <!-- Men New Arrivals Section -->
+    <section id="men-new-arrivals">
+        <h2>Men's New Arrivals</h2>
+        <div class="slider" id="men-slider">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/07/107647_0000_107647-3.jpg" alt="Men Item 1">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/07/107780-_0005_107780-1.jpg" alt="Men Item 2">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/06/107702_-1.jpg" alt="Men Item 3">
+        </div>
+    </section>
+
+    <!-- Kids New Arrivals Section -->
+    <section id="kids-new-arrivals">
+        <h2>Kids' New Arrivals</h2>
+        <div class="slider" id="kids-slider">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2023/06/0001_P36_102654_DSC00632.jpg" alt="Kids Item 1">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2023/06/0015_P25_102594_DSC00603.jpg" alt="Kids Item 2">
+            <img src="https://www.ufonepal.com/ufo/wp-content/uploads/2024/02/106195_DSC09159.jpg" alt="Kids Item 3">
+        </div>
+    </section>
+
+    <!-- Women Section (Hidden by Default) -->
+    <section id="women" class="hidden">
+        <h2>Women's Collection</h2>
+        <div class="products">
+            <div class="product-item" onclick="showProduct('women-pants')">Pants</div>
+            <div class="product-item" onclick="showProduct('women-jackets')">Jackets</div>
+            <div class="product-item" onclick="showProduct('women-shoes')">Shoes</div>
+            <div class="product-item" onclick="showProduct('women-shirts')">Shirts</div>
+            <div class="product-item" onclick="showProduct('women-dresses')">Dresses</div>
+        </div>
+        <div id="women-products" class="hidden">
+            <!-- Content for Women's Products will be displayed here based on selection -->
+        </div>
+    </section>
+
+    <!-- Men Section (Hidden by Default) -->
+    <section id="men" class="hidden">
+        <h2>Men's Collection</h2>
+        <div class="products">
+            <div class="product-item" onclick="showProduct('men-pants')">Pants</div>
+            <div class="product-item" onclick="showProduct('men-jackets')">Jackets</div>
+            <div class="product-item" onclick="showProduct('men-shoes')">Shoes</div>
+            <div class="product-item" onclick="showProduct('men-shirts')">Shirts</div>
+            <div class="product-item" onclick="showProduct('men-dresses')">Dresses</div>
+        </div>
+        <div id="men-products" class="hidden">
+            <!-- Content for Men's Products will be displayed here based on selection -->
+        </div>
+    </section>
+
+    <!-- Kids Section (Hidden by Default) -->
+    <section id="kids" class="hidden">
+        <h2>Kids' Collection</h2>
+        <div class="products">
+            <div class="product-item" onclick="showProduct('kids-pants')">Pants</div>
+            <div class="product-item" onclick="showProduct('kids-jackets')">Jackets</div>
+            <div class="product-item" onclick="showProduct('kids-shoes')">Shoes</div>
+            <div class="product-item" onclick="showProduct('kids-shirts')">Shirts</div>
+            <div class="product-item" onclick="showProduct('kids-dresses')">Dresses</div>
+        </div>
+        <div id="kids-products" class="hidden">
+            <!-- Content for Kids' Products will be displayed here based on selection -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Ali Sale Center is located in Kahukhola, Pokhara. It is a clothing shop where you can find affordable clothing pieces. Our goal is to provide all the necessities at a low price.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Name: Naziya Hussain</p>
+        <p>Phone: 977+9802729888</p>
+        <p>Email: <a href="mailto:naziya04pkr@gmail.com">naziya04pkr@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ali Sale Center. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#about-us">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-media">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
